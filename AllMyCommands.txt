@@ -1,0 +1,15 @@
+git init
+git add --all
+//delete the Second file
+git checkout -- "Second file.txt"
+git commit -m "Every thing is back"
+git remote add origin https://github.com/melnele/Sprint-0.git
+git push -u origin master
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m "ReadMe branch created for README.md"
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m "AllMyCommands file was added"
